@@ -27,7 +27,7 @@ public void OnMapStart()
 
 public void OnEntityCreated(int entity, const String:classname[])
 {
-	if(StrEqual(classname, "grenade_projectile"))
+	if (StrEqual(classname, "grenade_projectile"))
 	{
 		SDKHook(entity, SDKHook_SpawnPost, SpawnPost_Grenade);
 	}
